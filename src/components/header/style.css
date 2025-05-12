@@ -1,0 +1,8 @@
+.container {
+  max-width: 1280px;
+  width: 100%;
+}
+
+.header__link.active {
+  color: white
+}
