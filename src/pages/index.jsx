@@ -11,6 +11,7 @@ import Dashboard from "./Dashboard/Dashboard";
 import Product from "./Dashboard/product/Product";
 import Profile from "./Dashboard/profile/Profile";
 import Statistic from "./Dashboard/statistic/Statistic";
+import Detail from "./Dashboard/statistic/Detail";
 
 const MainRoutes = () => {
   return (
@@ -28,6 +29,8 @@ const MainRoutes = () => {
         <Route path="product" element={<Product />} />
         <Route path="profile" element={<Profile />} />
         <Route path="statistic" element={<Statistic />} />
+        <Route path="statistic/product/:id" element={<Detail />} />{" "}
+        {/* ✅ Qo‘shish kerak */}
       </Route>
     </Routes>
   );
